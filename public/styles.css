@@ -1,0 +1,174 @@
+:root {
+    --color-green: rgb(145, 255, 0);
+    --color-purple: #6c4fbb;
+    --color-grey:  rgb(58, 58, 58);
+    --color-grey2: rgb(22, 22, 22);
+}
+
+* {
+    margin:0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background: var(--color-grey2);
+    font-family: 'Roboto', sans-serif;
+}
+header div, footer div {
+    text-align: center;
+    background: rgb(97, 97, 97);
+    width: 100%;
+    height: 30px;
+}
+footer div {
+    position: fixed;
+    bottom: 0;
+}
+footer div a img {
+    width: 30px;
+    height: 30px;
+}
+.links {
+    text-align: center;
+    padding: 21px 0 14px;
+}
+
+.links a {
+    margin: 0px 50px;
+    font-size: 16px;
+    line-height: 26px;
+    color: white;
+    text-decoration: none;
+  }
+
+.links a:hover {
+    color: var(--color-green);
+    transition: 300ms;
+}
+
+#imagecontent {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+} 
+
+#imagecontent img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+}
+#imagecontent h1 {
+    color: #FFF;
+    font-size: 80px;
+    line-height: 90px;
+}
+
+#imagecontent h3 {
+    color: #FFF;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 30px;
+}
+
+#imagecontent ul {
+    display: flex;
+    list-style-type: none;
+    padding: 50px;
+    justify-content: center;
+}
+
+#imagecontent ul li {
+    padding-right: 30px;
+    color: #FFF;
+} 
+
+#backgroundcolorlinks {
+    background-color: var(--color-purple);
+}
+
+/* cards*/
+
+.cards{
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.card {
+    background-color: var(--color-grey);
+    color: #FFF;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+}
+
+.card_content {
+    padding: 20px;
+}
+
+.card_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px;
+}
+.card_price {
+    background-color: var(--color-grey);
+    filter: brightness(90%);
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;    
+}
+
+/*modal*/
+
+.modal_overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #FFF;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close_modal {
+    color: black;
+    position: absolute;
+    right: 9px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/*modal.active*/
+
+.modal_overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+#page-not-found {
+    text-align: center;
+    margin-top: 100px;
+}
+#page-not-found img {
+    width: 300px;
+    height: 200px;
+}
