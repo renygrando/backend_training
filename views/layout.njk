@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="https://raw.githubusercontent.com/renygrando/rocketseat-launchbase/master/html-css/assets/favicon.ico" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles.css">
+        
+        {% block head %}
+
+             <title> Rocketseat </title>
+
+        {% endblock %}
+
+    </head>
+    <body>
+        <header>
+            <div class="links">
+                <a href="https://discordapp.com/invite/gCRAFhc"> Comunidade </a>
+                <a href="mailto: oi@rocketseat.com.br"> Email </a>
+                <a href="tel: +5547992078767"> Telefone </a>
+                <a href="/courses"> Conteúdo </a>
+                <a href="/"> Sobre </a>
+            </div>
+        </header>
+
+            {% block content %}
+
+            {% endblock %}
+        
+        <footer>
+            <div class="links">
+
+                <a href="https://github.com/Rocketseat" target="about_blank"> <img src="https://github.com/renygrando/rocketseat-launchbase/blob/master/html-css/assets/github_icon.png?raw=true"
+                        alt="Veja nosso respositório no github!"> 
+                </a>
+                <a href="https://www.instagram.com/rocketseat_oficial" target="about_blank"> <img
+                        src="https://github.com/renygrando/rocketseat-launchbase/blob/master/html-css/assets/instagram_icon.png?raw=true" alt="Siga-nos no instagram!">
+                </a>
+                <a href="https://facebook.com/rocketseat" target="about_blank"> <img src="https://github.com/renygrando/rocketseat-launchbase/blob/master/html-css/assets/facebook_icon.png?raw=true"
+                        alt="Siga-nos no Facebook!"> 
+                </a>
+            </div>
+        </footer>
+    </body>
+</html>
