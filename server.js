@@ -2,6 +2,7 @@ const express = require('express')
 const nunjucks = require('nunjucks')
 
 const server = express()
+const sites = require("./data")
 
 server.use(express.static("public"))
 
@@ -16,7 +17,7 @@ server.get("/", function(req, res){
 })
 
 server.get("/courses", function(req, res){
-    return res.render("courses")
+    return res.render("courses", { items: sites })
 })
 
 server.use(function(req, res) {
