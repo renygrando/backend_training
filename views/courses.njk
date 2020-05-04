@@ -10,55 +10,35 @@
 
 {% endblock %}
 
-        <section class="cards">
-            <div class="card" id="starter">
-                <div class="card_image_container">
-                    <img src="https://skylab.rocketseat.com.br/static/64c237ccff807c054339a62d53b4b402.svg">
+        <section>
+            <div class="cards">
+                {% for item in items %}
+                <div class="card" id="{{item.id}}">
+                    <div class="card_image_container">
+                        <img src="{{item.img}}">
+                    </div>
+                    <div class="card_content">
+                        <p>{{item.title}}</p>
+                    </div>
+                    <div class="card_info">
+                        <p></p>
+                        <p class="card_price">{{item.price}}</p>
+                    </div>
                 </div>
-                <div class="card_content">
-                    <p>Torne-se um programador desejado no mercado com esses cursos gratuítos</p>
-                </div>
-                <div class="card_info">
-                    <p></p>
-                    <p class="card_price"> Grátis </p>
-                </div>
-            </div>
-            <div class="card" id="launchbase">
-                <div class="card_image_container">
-                    <img src="https://skylab.rocketseat.com.br/static/0828532024cb46921a6b5e941f8d788d.svg">
-                </div>
-                <div class="card_content">
-                    <p>Domine a programação do zero e tenha acesso às melhores oportunidades do mercado</p>
-                </div>
-                <div class="card_info">
-                    <p></p>
-                    <p class="card_price"> Consulte-nos </p>
-                </div>
-            </div>
-            <div class="card" id="gostack">
-                <div class="card_image_container">
-                    <img src="https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg">
-                </div>
-                <div class="card_content">
-                    <p>Treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile</p>
-                </div>
-                <div class="card_info">
-                    <p></p>
-                    <p class="card_price"> Consulte-nos </p>
-                </div>
-            </div>
-            <div class="modal_overlay">
-                <div class="modal">
-                    <a class="close_modal">
-                        <i class="material-icons">close</i>
-                    </a>
-                    <div class="modal_content">
-                        <iframe src="" frameborder="0"></iframe>
+                {% endfor %}
+                <div class="modal_overlay">
+                    <div class="modal">
+                        <a class="close_modal">
+                            <i class="material-icons">close</i>
+                        </a>
+                        <div class="modal_content">
+                            <iframe src="" frameborder="0"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     
-        <script src="/scripts.js"></script>
+        <script src="scripts.js"></script>
 
  {% endblock %}
