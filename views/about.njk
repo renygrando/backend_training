@@ -10,20 +10,10 @@
 
         <section>
             <div id="imagecontent">
-                <img src="https://github.com/renygrando/rocketseat-launchbase/blob/master/html-css/assets/logo_rocketseat.jpg?raw=true" alt="Rocketseat">
-                <h1>Rocketseat</h1>
-                <h3>As melhores tecnologias em programação, direto ao ponto e do jeito certo.</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>|</li>
-                    <li>CSS </li>
-                    <li>|</li>
-                    <li>Javascript</li>
-                    <li>|</li>
-                    <li>ReactJs</li>
-                    <li>|</li>
-                    <li>AnglularJs</li>
-                </ul>
+                <img src="{{about.avatar_url }}" alt="Imagem de {{about.name}}">
+                <h1>{{ about.name }}</h1>
+                <h3>{{ about.description }}</h3>
+                <p> {{ about.sub_description }} </p>
             </div>
         </section>
         
