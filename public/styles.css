@@ -32,7 +32,6 @@ footer div a img {
     text-align: center;
     padding: 21px 0 14px;
 }
-
 .links a {
     margin: 0px 50px;
     font-size: 16px;
@@ -40,18 +39,15 @@ footer div a img {
     color: white;
     text-decoration: none;
   }
-
 .links a:hover {
     color: var(--color-green);
     transition: 300ms;
 }
-
 #imagecontent {
     text-align: center;
     width: 100%;
     height: 100%;
 } 
-
 #imagecontent img {
     border-radius: 50%;
     width: 200px;
@@ -63,28 +59,28 @@ footer div a img {
     font-size: 80px;
     line-height: 90px;
 }
-
 #imagecontent h3 {
     color: #FFF;
     font-size: 20px;
     line-height: 30px;
     padding-top: 30px;
 }
-
-#imagecontent ul {
-    display: flex;
-    list-style-type: none;
-    padding: 50px;
-    justify-content: center;
-}
-
-#imagecontent ul li {
-    padding-right: 30px;
+#imagecontent p {
+    padding-top: 50px;
+    font-size: 18px;
+    line-height: 28px;
     color: #FFF;
 } 
-
 #backgroundcolorlinks {
     background-color: var(--color-purple);
+}
+#page-not-found {
+    text-align: center;
+    margin-top: 100px;
+}
+#page-not-found img {
+    width: 300px;
+    height: 200px;
 }
 
 /* cards*/
@@ -101,12 +97,11 @@ footer div a img {
     border-radius: 20px;
     padding: 20px;
     width: 300px;
+    cursor: pointer;
 }
-
 .card_content {
     padding: 20px;
 }
-
 .card_info {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -122,7 +117,6 @@ footer div a img {
 }
 
 /*modal*/
-
 .modal_overlay {
     background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
@@ -132,7 +126,6 @@ footer div a img {
     opacity: 0;
     visibility: hidden;
 }
-
 .modal {
     background-color: #FFF;
     width: 90%;
@@ -140,7 +133,6 @@ footer div a img {
     margin: 5vh auto;
     position: relative;
 }
-
 .modal .close_modal {
     color: black;
     position: absolute;
@@ -150,24 +142,13 @@ footer div a img {
 }
 
 /*modal.active*/
-
 .modal_overlay.active {
     opacity: 1;
     visibility: visible;
 }
-
 iframe {
     width: 100%;
     height: 90%;
     position: absolute;
     top: 5%;
-}
-
-#page-not-found {
-    text-align: center;
-    margin-top: 100px;
-}
-#page-not-found img {
-    width: 300px;
-    height: 200px;
 }
