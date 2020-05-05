@@ -15,6 +15,6 @@ module.exports = [
         id: "gostack",
         img: "https://skylab.rocketseat.com.br/static/83a178a0653dab1d55e2ed7946465975.svg",
         title: "Treinamento imersivo nas tecnologias mais modernas de desenvolvimento web e mobile",
-        price: "Consulte-nos"
+        price: "Consulte-nos",
     }
 ]
