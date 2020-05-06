@@ -21,12 +21,25 @@ server.get("/", function(req, res){
         description: "As melhores tecnologias em programação, direto ao ponto e do jeito certo.",
         sub_description: "HTML | CSS | Javascript | ReactJs | AngularJs"
     }
-    return res.render("about", { about: data })
+    return res.render("about", { about: data})
 })
 
 server.get("/courses", function(req, res){
+
     return res.render("courses", { items: sites })
 })
+
+server.get("/courses/:id", function(req, res) {
+    const id = req.params.id;
+    
+    const site = sites.find(function(site){
+        return site.id == id
+    })
+    if(!site){
+        return res.send("Site não encontrado")
+    }
+    return res.render("course", { items: site })
+  })
 
 server.use(function(req, res) {
     res.status(404).render("not-found");
