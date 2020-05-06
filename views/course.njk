@@ -1,0 +1,32 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+{% block head %}
+
+    <title> Rocketseat  - ihull </title>
+
+{% endblock %}
+
+        <section>
+            <div class="course">
+                
+                <div class="course_card" id="{{items.id}}">
+                    <div class="card_image_container">
+                        <img src="{{items.img}}">
+                    </div>
+                    <div class="card_content">
+                        <p>{{items.title}}</p>
+                    </div>
+                    <div class="card_info">
+                        <p></p>
+                        <p class="card_price">{{ items.price }}</p>
+                    </div>
+                     <iframe id="course-site" src="{{items.link}}" frameborder="0"></iframe>   
+                </div>
+                
+         </section>      
+        
+        <script src="scripts.js"></script>
+
+ {% endblock %}
